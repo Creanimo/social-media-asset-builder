@@ -1,0 +1,40 @@
+$obj_bubble_border-width: 5px;
+$obj_bubble_border: $obj_bubble_border-width solid black;
+$obj_bubble_border-radius: 10px;
+
+
+.create-social__object__speech-bubble {
+    max-width: 75%;
+    min-width: 200px;
+    padding: 8px 12px 0 12px;
+    position: relative;
+    border-radius: 0 0 $obj_bubble_border-radius $obj_bubble_border-radius;
+    margin-top: 40px;
+    border: $obj_bubble_border;
+    border-top: 0;
+    margin-right: 16px;
+}
+
+.create-social__object__speech-bubble::before,
+.create-social__object__speech-bubble::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 20px;
+    top: (-20px - $obj_bubble_border-width);
+    border: $obj_bubble_border;
+}
+
+.create-social__object__speech-bubble::before {
+    right: -$obj_bubble_border_width;
+    border: $obj_bubble_border;
+    border-width: $obj_bubble_border_width $obj_bubble_border_width 0 0;
+    transform-origin: bottom;
+    transform: skew(-45deg);
+}
+
+.create-social__object__speech-bubble::after {
+    left: -$obj_bubble_border_width;
+    border-width: $obj_bubble_border_width 0 0 $obj_bubble_border_width;
+    border-radius: $obj_bubble_border-radius 0 0 0;
+}
