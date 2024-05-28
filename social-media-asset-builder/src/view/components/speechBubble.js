@@ -9,7 +9,7 @@ const SpeechBubble = ({ text, width, align, arrowPosition }) => {
 
   return (
     <div style={bubbleStyle} class="create-social__object__speech-bubble">
-      <p>{text}</p>
+        {text}
     </div>
   );
 };
