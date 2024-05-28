@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@shoelace-style/shoelace": "^2.15.1",
-    "rhino-editor": "^0.10.2"
-  }
-}
