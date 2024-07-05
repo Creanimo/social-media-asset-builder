@@ -42,7 +42,7 @@ const ConfigSidebar = ({ config, onChange }) => {
           </div>
         );
       default:
-        return null;
+        return (<br/>);
     }
   };
 
